@@ -1,0 +1,6 @@
+<h2><%= @photo.title %></h2>
+<a href="<%=@photo.image_url %>" target="_blank"><img src="<%= @photo.image_url %>" class="result-img"></a>
+<h3>Your tagging results: </h3>
+<% @photo.tags.each do |tag, confidence| %>
+  <p>Tag: <b><%= tag %></b>, confidence: <%= confidence %></p>
+<% end %>

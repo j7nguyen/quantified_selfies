@@ -7,7 +7,12 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore application config
+config/cloudinary.yml
+/config/application.yml
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
+.env
